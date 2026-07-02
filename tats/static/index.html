@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TATS — Token Analysis and Tracking System</title>
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<header>
+  <h1>TATS</h1>
+  <nav id="nav">
+    <button data-tab="summary" class="active">Summary</button>
+    <button data-tab="tokens">Tokens</button>
+    <button data-tab="exchanges">Exchanges</button>
+    <button data-tab="foci">FOCI</button>
+    <button data-tab="broci">BroCI</button>
+    <button data-tab="graph">Graph</button>
+    <button data-tab="sequence">Sequence</button>
+  </nav>
+  <div id="kpis" style="margin-left:auto"></div>
+  <span id="live-status" class="muted" style="margin-left:.6rem;font-size:.78rem"></span>
+</header>
+<main>
+
+<section id="summary" class="section active">
+  <h2>Summary</h2>
+  <div id="summary-meta" class="dash-meta"></div>
+  <div id="summary-stats" class="dash-stats"></div>
+  <div id="dashboard" class="dashboard">
+    <div class="dash-card" id="card-users">
+      <h3>Users <span class="hint" id="users-hint"></span></h3>
+      <div class="dash-stats" id="users-stats"></div>
+      <div class="scroll-card" id="users-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-validity">
+      <h3>Token validity <span class="hint" id="validity-now"></span></h3>
+      <div class="dash-stats" id="validity-stats"></div>
+      <div class="next-expire" id="next-expire"></div>
+      <div class="dash-meta" id="validity-actions" style="margin-top:.5rem"></div>
+    </div>
+    <div class="dash-card" id="card-clients">
+      <h3>Clients seen in token exchanges <span class="hint" id="clients-hint"></span></h3>
+      <div class="scroll-card" id="clients-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-audiences">
+      <h3>Audiences (<code>aud</code>) <span class="hint" id="aud-hint"></span></h3>
+      <div class="scroll-card" id="audiences-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-tenants">
+      <h3>Tenants (<code>tid</code>) <span class="hint" id="tenants-hint"></span></h3>
+      <div class="scroll-card" id="tenants-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-hosts">
+      <h3>Hosts <span class="hint" id="hosts-hint"></span></h3>
+      <div class="scroll-card" id="hosts-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-scopes">
+      <h3>Privileged scopes &amp; roles <span class="hint" id="scopes-hint"></span></h3>
+      <div class="dash-stats" id="scopes-stats"></div>
+      <div class="scroll-card" id="scopes-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-anomalies">
+      <h3>Audience / host mismatches <span class="hint" id="anomalies-hint"></span></h3>
+      <div class="scroll-card" id="anomalies-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-amr">
+      <h3>Auth methods (<code>amr</code>) <span class="hint" id="amr-hint"></span></h3>
+      <div class="scroll-card" id="amr-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-security">
+      <h3>Security features <span class="hint" id="security-hint"></span></h3>
+      <div class="dash-stats" id="security-stats"></div>
+      <div class="scroll-card" id="security-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-chains">
+      <h3>Refresh-token chains <span class="hint" id="chains-hint"></span></h3>
+      <div class="dash-stats" id="chains-stats"></div>
+      <div class="scroll-card" id="chains-list"><div class="empty">Loading…</div></div>
+    </div>
+    <div class="dash-card" id="card-sources">
+      <h3>Sources <span class="hint" id="sources-hint"></span></h3>
+      <div class="scroll-card" id="sources-list"><div class="empty">Loading…</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="tokens" class="section">
+  <h2>Token inventory</h2>
+  <div class="toolbar">
+    <input type="search" id="t-search" placeholder="Search fp / sample / claims / host / app / resource…">
+    <span class="chip"><input type="checkbox" id="t-filter-access" checked> access</span>
+    <span class="chip"><input type="checkbox" id="t-filter-refresh" checked> refresh</span>
+    <span class="chip"><input type="checkbox" id="t-filter-id" checked> id</span>
+    <span class="chip"><input type="checkbox" id="t-filter-unknown"> unknown</span>
+    <span class="chip"><input type="checkbox" id="t-filter-jwt" checked> jwt</span>
+    <span class="chip"><input type="checkbox" id="t-filter-opaque" checked> opaque</span>
+    <select id="t-uses-filter">
+      <option value="all">all uses</option>
+      <option value="used">used only (uses ≥ 1)</option>
+      <option value="unused">unused only (uses = 0)</option>
+    </select>
+    <select id="t-validity-filter" title="Filter by JWT exp claim">
+      <option value="all">any validity</option>
+      <option value="valid">currently valid (exp &gt; now)</option>
+      <option value="expired">expired (exp &lt; now)</option>
+      <option value="unknown">unknown expiry</option>
+    </select>
+    <span class="chip"><input type="checkbox" id="t-filter-foci"> FOCI only</span>
+    <span class="chip"><input type="checkbox" id="t-filter-broci"> BroCI only</span>
+    <span class="chip"><input type="checkbox" id="t-filter-app"> has app match</span>
+    <span class="chip"><input type="checkbox" id="t-filter-resource"> has resource match</span>
+    <span class="chip" title="Show only tokens that fired a CAE / PoP / step-up marker (see Security features card)"><input type="checkbox" id="t-filter-security"> security feature:</span>
+    <select id="t-security-select" disabled>
+      <option value="cae">CAE-capable</option>
+      <option value="pop">PoP-bound</option>
+      <option value="acr">acr present</option>
+      <option value="acrs">acrs (step-up)</option>
+      <option value="amr">amr present</option>
+    </select>
+    <button class="action secondary" id="t-clear">Reset filters</button>
+  </div>
+  <div class="row-controls">
+    <span id="t-count" class="muted"></span>
+    <span style="margin-left:auto"></span>
+    <button class="action secondary" id="t-select-all">Select visible</button>
+    <button class="action secondary" id="t-clear-sel">Clear selection</button>
+    <button class="action" id="t-highlight-graph">Highlight in Graph</button>
+    <button class="action" id="t-isolate-graph">Isolate in Graph</button>
+    <button class="action secondary" id="t-show-sequence">Show in Sequence</button>
+    <button class="action secondary" id="t-export-csv" title="Download visible tokens as CSV (metadata only)">Export CSV</button>
+    <button class="action secondary" id="t-export-json" title="Download visible tokens as JSON (metadata only)">Export JSON</button>
+    <button class="action secondary" id="t-export-replay" title="Download selected tokens with full raw value, claims, and observed events — use for replay or with downstream tools (roadtx, jwt.io, curl). Requires --store-tokens at ingest.">Export selected for replay</button>
+  </div>
+  <div class="scroll">
+    <table id="t-table">
+      <thead>
+        <tr>
+          <th style="width:2.5rem"><input type="checkbox" id="t-toggle-all" title="Select / deselect all visible"></th>
+          <th data-sort="fp">FP</th>
+          <th data-sort="type">Type</th>
+          <th data-sort="sub_type">Fmt</th>
+          <th data-sort="uses">Uses</th>
+          <th data-sort="first_seen">First seen</th>
+          <th data-sort="last_seen">Last seen</th>
+          <th data-sort="issuer_host">Issuer</th>
+          <th data-sort="app_name">App</th>
+          <th data-sort="resource_name">Resource</th>
+          <th data-sort="foci_family">FOCI</th>
+        </tr>
+      </thead>
+      <tbody id="t-body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="exchanges" class="section">
+  <h2>Exchanges</h2>
+  <div class="toolbar">
+    <input type="search" id="x-search" placeholder="Search host / path / client_id / FOCI / BroCI…">
+    <span class="chip"><input type="checkbox" id="x-filter-foci"> FOCI only</span>
+    <span class="chip"><input type="checkbox" id="x-filter-broci"> BroCI only</span>
+    <button class="action secondary" id="x-clear">Reset filters</button>
+    <button class="action secondary" id="x-export-csv" title="Download visible exchanges as CSV">Export CSV</button>
+    <button class="action secondary" id="x-export-json" title="Download visible exchanges as JSON">Export JSON</button>
+  </div>
+  <div class="scroll">
+    <table id="x-table">
+      <thead>
+        <tr>
+          <th data-sort="seq">#</th>
+          <th data-sort="time">Time</th>
+          <th data-sort="host">Host</th>
+          <th data-sort="path">Path</th>
+          <th data-sort="grant_type">Grant</th>
+          <th data-sort="client_id">Client ID</th>
+          <th data-sort="foci_family">FOCI</th>
+          <th>BroCI</th>
+          <th>Inputs</th>
+          <th>Outputs</th>
+        </tr>
+      </thead>
+      <tbody id="x-body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="foci" class="section">
+  <h2>FOCI refresh-token flows</h2>
+  <p class="muted">FOCI (Family of Client IDs) is signalled by a <code>foci</code> field in
+  the Microsoft token-endpoint response. A refresh token from Family <code>"1"</code> can be
+  redeemed at the token endpoint by <em>any</em> other client in that family — not just the
+  app it was issued to.</p>
+  <div id="foci-body"></div>
+</section>
+
+<section id="broci" class="section">
+  <h2>BroCI / Nested App Authentication exchanges</h2>
+  <p class="muted">BroCI is detected by <code>brk_client_id</code> /
+  <code>brk_redirect_uri</code> form parameters or a redirect URI shaped like
+  <code>brk-&lt;guid&gt;://…</code>. The broker's id never appears as a JWT claim — it
+  only shows up on the wire.</p>
+  <div id="broci-body"></div>
+</section>
+
+<section id="graph" class="section">
+  <h2>Token ↔ service graph</h2>
+  <div class="row-controls">
+    <span id="g-state" class="muted">No tokens highlighted.</span>
+    <span style="margin-left:auto"></span>
+    <button class="action secondary" id="g-clear">Clear highlight + isolate</button>
+    <button class="action secondary" id="g-refresh">Refresh</button>
+  </div>
+  <div class="diagram-wrap" id="g-wrap"><div class="empty">Loading graph…</div></div>
+  <p class="legend">Highlight a subset of tokens via the Tokens tab toolbar
+  (<em>Highlight in Graph</em>) — selected nodes get a yellow accent.
+  <em>Isolate in Graph</em> redraws the diagram with only the selected tokens
+  and the tokens they exchange with.</p>
+</section>
+
+<section id="sequence" class="section">
+  <h2>Activity sequence</h2>
+  <div class="row-controls">
+    <span id="s-state" class="muted">All events.</span>
+    <span style="margin-left:auto"></span>
+    <label class="muted">Max events <input type="number" id="s-max" value="200" min="20" max="2000" style="width:5rem;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:.15rem .3rem"></label>
+    <button class="action secondary" id="s-clear">Show all</button>
+    <button class="action secondary" id="s-refresh">Refresh</button>
+  </div>
+  <div class="diagram-wrap" id="s-wrap"><div class="empty">Loading sequence…</div></div>
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+{{JS}}
+</script>
+</body>
+</html>

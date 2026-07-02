@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE items>
+<items burpVersion="2025.x">
+  <item>
+    <time>Mon Apr 20 10:00:00 UTC 2026</time>
+    <url>https://idp.example.com/oauth/token</url>
+    <host ip="1.2.3.4">idp.example.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>POST</method>
+    <path>/oauth/token</path>
+    <extension>null</extension>
+    <request base64="true">UE9TVCAvb2F1dGgvdG9rZW4gSFRUUC8xLjENCkhvc3Q6IGlkcC5leGFtcGxlLmNvbQ0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQNCkNvbnRlbnQtTGVuZ3RoOiA5OQ0KDQpncmFudF90eXBlPXBhc3N3b3JkJnVzZXJuYW1lPWFsaWNlJnBhc3N3b3JkPWh1bnRlcjImY2xpZW50X2lkPXdlYi1hcHA=</request>
+    <status>200</status>
+    <responselength>737</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCkNvbnRlbnQtTGVuZ3RoOiA2NjUNCg0KeyJhY2Nlc3NfdG9rZW4iOiAiZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa2NDNWxlR0Z0Y0d4bExtTnZiU0lzSW5OMVlpSTZJblZ6WlhJdE5ESWlMQ0oxY0c0aU9pSjFjMlZ5TFRReVFHVjRZVzF3YkdVdVkyOXRJaXdpWVhWa0lqb2lZWEJwTG1WNFlXMXdiR1V1WTI5dElpd2ljMk52Y0dVaU9pSnlaV0ZrSWl3aVpYaHdJam94TnpjM09URTVNVEl4ZlEuc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3MiLCAicmVmcmVzaF90b2tlbiI6ICJyMV9hYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhIiwgImlkX3Rva2VuIjogImV5SmhiR2NpT2lKU1V6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSm9kSFJ3Y3pvdkwybGtjQzVsZUdGdGNHeGxMbU52YlNJc0luTjFZaUk2SW5WelpYSXRORElpTENKd2NtVm1aWEp5WldSZmRYTmxjbTVoYldVaU9pSjFjMlZ5TFRReVFHVjRZVzF3YkdVdVkyOXRJaXdpYm1GdFpTSTZJbFZ6WlhJZ1JtOXlkSGt0Vkhkdklpd2lZWFZrSWpvaVkyeHBaVzUwTFdGaVl5SXNJbVY0Y0NJNk1UYzNOemt5TURZeU1YMC5zc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3NzcyIsICJ0b2tlbl90eXBlIjogIkJlYXJlciIsICJleHBpcmVzX2luIjogMzYwMH0=</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 10:00:01 UTC 2026</time>
+    <url>https://api.example.com/v1/me</url>
+    <host ip="1.2.3.4">api.example.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>GET</method>
+    <path>/v1/me</path>
+    <extension>null</extension>
+    <request base64="true">R0VUIC92MS9tZSBIVFRQLzEuMQ0KSG9zdDogYXBpLmV4YW1wbGUuY29tDQpBdXRob3JpemF0aW9uOiBCZWFyZXIgZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa2NDNWxlR0Z0Y0d4bExtTnZiU0lzSW5OMVlpSTZJblZ6WlhJdE5ESWlMQ0oxY0c0aU9pSjFjMlZ5TFRReVFHVjRZVzF3YkdVdVkyOXRJaXdpWVhWa0lqb2lZWEJwTG1WNFlXMXdiR1V1WTI5dElpd2ljMk52Y0dVaU9pSnlaV0ZrSWl3aVpYaHdJam94TnpjM09URTVNVEl4ZlEuc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3MNCg0K</request>
+    <status>200</status>
+    <responselength>67</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJpZCI6InVzZXItNDIifQ==</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 10:00:02 UTC 2026</time>
+    <url>https://api.example.com/v1/orders</url>
+    <host ip="1.2.3.4">api.example.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>GET</method>
+    <path>/v1/orders</path>
+    <extension>null</extension>
+    <request base64="true">R0VUIC92MS9vcmRlcnMgSFRUUC8xLjENCkhvc3Q6IGFwaS5leGFtcGxlLmNvbQ0KQXV0aG9yaXphdGlvbjogQmVhcmVyIGV5SmhiR2NpT2lKU1V6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSm9kSFJ3Y3pvdkwybGtjQzVsZUdGdGNHeGxMbU52YlNJc0luTjFZaUk2SW5WelpYSXRORElpTENKMWNHNGlPaUoxYzJWeUxUUXlRR1Y0WVcxd2JHVXVZMjl0SWl3aVlYVmtJam9pWVhCcExtVjRZVzF3YkdVdVkyOXRJaXdpYzJOdmNHVWlPaUp5WldGa0lpd2laWGh3SWpveE56YzNPVEU1TVRJeGZRLnNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3NzDQoNCg==</request>
+    <status>200</status>
+    <responselength>64</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJvcmRlcnMiOltdfQ==</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 10:05:00 UTC 2026</time>
+    <url>https://idp.example.com/oauth/token</url>
+    <host ip="1.2.3.4">idp.example.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>POST</method>
+    <path>/oauth/token</path>
+    <extension>null</extension>
+    <request base64="true">UE9TVCAvb2F1dGgvdG9rZW4gSFRUUC8xLjENCkhvc3Q6IGlkcC5leGFtcGxlLmNvbQ0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQNCg0KZ3JhbnRfdHlwZT1yZWZyZXNoX3Rva2VuJnJlZnJlc2hfdG9rZW49cjFfYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYSZjbGllbnRfaWQ9d2ViLWFwcA==</request>
+    <status>200</status>
+    <responselength>427</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJhY2Nlc3NfdG9rZW4iOiAiZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa2NDNWxlR0Z0Y0d4bExtTnZiU0lzSW5OMVlpSTZJblZ6WlhJdE5ESWlMQ0oxY0c0aU9pSjFjMlZ5TFRReVFHVjRZVzF3YkdVdVkyOXRJaXdpWVhWa0lqb2lZWEJwTG1WNFlXMXdiR1V1WTI5dElpd2ljMk52Y0dVaU9pSnlaV0ZrSWl3aVpYaHdJam94TnpjM09USXhOVEl4ZlEuc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3MiLCAicmVmcmVzaF90b2tlbiI6ICJyMl9iYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiIiwgInRva2VuX3R5cGUiOiAiQmVhcmVyIiwgImV4cGlyZXNfaW4iOiAzNjAwfQ==</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 10:05:01 UTC 2026</time>
+    <url>https://api.example.com/v1/me</url>
+    <host ip="1.2.3.4">api.example.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>GET</method>
+    <path>/v1/me</path>
+    <extension>null</extension>
+    <request base64="true">R0VUIC92MS9tZSBIVFRQLzEuMQ0KSG9zdDogYXBpLmV4YW1wbGUuY29tDQpBdXRob3JpemF0aW9uOiBCZWFyZXIgZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa2NDNWxlR0Z0Y0d4bExtTnZiU0lzSW5OMVlpSTZJblZ6WlhJdE5ESWlMQ0oxY0c0aU9pSjFjMlZ5TFRReVFHVjRZVzF3YkdVdVkyOXRJaXdpWVhWa0lqb2lZWEJwTG1WNFlXMXdiR1V1WTI5dElpd2ljMk52Y0dVaU9pSnlaV0ZrSWl3aVpYaHdJam94TnpjM09USXhOVEl4ZlEuc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3MNCg0K</request>
+    <status>200</status>
+    <responselength>67</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJpZCI6InVzZXItNDIifQ==</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 10:05:02 UTC 2026</time>
+    <url>https://analytics.example.net/pixel.gif</url>
+    <host ip="1.2.3.4">analytics.example.net</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>GET</method>
+    <path>/pixel.gif</path>
+    <extension>null</extension>
+    <request base64="true">R0VUIC9waXhlbC5naWYgSFRUUC8xLjENCkhvc3Q6IGFuYWx5dGljcy5leGFtcGxlLm5ldA0KQ29va2llOiBhY2Nlc3NfdG9rZW49ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa2NDNWxlR0Z0Y0d4bExtTnZiU0lzSW5OMVlpSTZJblZ6WlhJdE5ESWlMQ0oxY0c0aU9pSjFjMlZ5TFRReVFHVjRZVzF3YkdVdVkyOXRJaXdpWVhWa0lqb2lZWEJwTG1WNFlXMXdiR1V1WTI5dElpd2ljMk52Y0dVaU9pSnlaV0ZrSWl3aVpYaHdJam94TnpjM09USXhOVEl4ZlEuc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3M7IHNpZD14eXoNCg0K</request>
+    <status>204</status>
+    <responselength>27</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjA0IE5vIENvbnRlbnQNCg0K</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 11:00:00 UTC 2026</time>
+    <url>https://login.microsoftonline.com/6c12b0b0-b2cc-4a73-8252-0b94bfca2145/oauth2/v2.0/token</url>
+    <host ip="1.2.3.4">login.microsoftonline.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>POST</method>
+    <path>/6c12b0b0-b2cc-4a73-8252-0b94bfca2145/oauth2/v2.0/token</path>
+    <extension>null</extension>
+    <request base64="true">UE9TVCAvNmMxMmIwYjAtYjJjYy00YTczLTgyNTItMGI5NGJmY2EyMTQ1L29hdXRoMi92Mi4wL3Rva2VuIEhUVFAvMS4xDQpIb3N0OiBsb2dpbi5taWNyb3NvZnRvbmxpbmUuY29tDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZA0KQ29udGVudC1MZW5ndGg6IDIyNQ0KDQpjbGllbnRfaWQ9MWZlYzhlNzgtYmNlNC00YWFmLWFiMWItNTQ1MWNjMzg3MjY0JmdyYW50X3R5cGU9YXV0aG9yaXphdGlvbl9jb2RlJmNvZGU9ZmFrZWF1dGhjb2RlZmFrZWF1dGhjb2RlJnNjb3BlPVVzZXIuUmVhZCtNYWlsLlJlYWQrb2ZmbGluZV9hY2Nlc3Mrb3BlbmlkK3Byb2ZpbGUmcmVkaXJlY3RfdXJpPWh0dHBzJTNBJTJGJTJGdGVhbXMubWljcm9zb2Z0LmNvbSUyRmF1dGgtY2FsbGJhY2s=</request>
+    <status>200</status>
+    <responselength>1139</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJ0b2tlbl90eXBlIjogIkJlYXJlciIsICJzY29wZSI6ICJVc2VyLlJlYWQgTWFpbC5SZWFkIG9wZW5pZCBwcm9maWxlIiwgImV4cGlyZXNfaW4iOiAzNTk5LCAiZXh0X2V4cGlyZXNfaW4iOiAzNTk5LCAiYWNjZXNzX3Rva2VuIjogImV5SmhiR2NpT2lKU1V6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSm9kSFJ3Y3pvdkwzTjBjeTUzYVc1a2IzZHpMbTVsZEM4Mll6RXlZakJpTUMxaU1tTmpMVFJoTnpNdE9ESTFNaTB3WWprMFltWmpZVEl4TkRVdklpd2lZWFZrSWpvaWFIUjBjSE02THk5bmNtRndhQzV0YVdOeWIzTnZablF1WTI5dElpd2lZWEJ3YVdRaU9pSXhabVZqT0dVM09DMWlZMlUwTFRSaFlXWXRZV0l4WWkwMU5EVXhZMk16T0RjeU5qUWlMQ0poZW5BaU9pSXhabVZqT0dVM09DMWlZMlUwTFRSaFlXWXRZV0l4WWkwMU5EVXhZMk16T0RjeU5qUWlMQ0owYVdRaU9pSTJZekV5WWpCaU1DMWlNbU5qTFRSaE56TXRPREkxTWkwd1lqazBZbVpqWVRJeE5EVWlMQ0p2YVdRaU9pSmhZV0ZoWVdGaFlTMHhNVEV4TFRJeU1qSXRNek16TXkwME5EUTBORFEwTkRRME5EUWlMQ0p6ZFdJaU9pSkdMVlJsWVcxelUzVmlhbVZqZENJc0luVndiaUk2SW1Gc2FXTmxRR052Ym5SdmMyOHVZMjl0SWl3aWJtRnRaU0k2SWtGc2FXTmxJRVY0WVcxd2JHVWlMQ0p3Y21WbVpYSnlaV1JmZFhObGNtNWhiV1VpT2lKaGJHbGpaVUJqYjI1MGIzTnZMbU52YlNJc0luVnVhWEYxWlY5dVlXMWxJam9pWVd4cFkyVkFZMjl1ZEc5emJ5NWpiMjBpTENKelkzQWlPaUpWYzJWeUxsSmxZV1FnVFdGcGJDNVNaV0ZrSUc5bVpteHBibVZmWVdOalpYTnpJRzl3Wlc1cFpDQndjbTltYVd4bElpd2laWGh3SWpveE56YzNPVEl6TXpJeGZRLnNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3NzIiwgInJlZnJlc2hfdG9rZW4iOiAiMC5BUkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQSIsICJmb2NpIjogIjEiLCAiY2xpZW50X2luZm8iOiAiZXlKMWFXUWlPaUp0YjJOckxYVnBaQ0o5In0=</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 11:05:00 UTC 2026</time>
+    <url>https://login.microsoftonline.com/6c12b0b0-b2cc-4a73-8252-0b94bfca2145/oauth2/v2.0/token</url>
+    <host ip="1.2.3.4">login.microsoftonline.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>POST</method>
+    <path>/6c12b0b0-b2cc-4a73-8252-0b94bfca2145/oauth2/v2.0/token</path>
+    <extension>null</extension>
+    <request base64="true">UE9TVCAvNmMxMmIwYjAtYjJjYy00YTczLTgyNTItMGI5NGJmY2EyMTQ1L29hdXRoMi92Mi4wL3Rva2VuIEhUVFAvMS4xDQpIb3N0OiBsb2dpbi5taWNyb3NvZnRvbmxpbmUuY29tDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZA0KQ29udGVudC1MZW5ndGg6IDMyMA0KDQpjbGllbnRfaWQ9MDRiMDc3OTUtOGRkYi00NjFhLWJiZWUtMDJmOWUxYmY3YjQ2JmdyYW50X3R5cGU9cmVmcmVzaF90b2tlbiZyZWZyZXNoX3Rva2VuPTAuQVJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEmc2NvcGU9aHR0cHMlM0ElMkYlMkZtYW5hZ2VtZW50LmNvcmUud2luZG93cy5uZXQlMkYuZGVmYXVsdCtvZmZsaW5lX2FjY2VzcyZyZWRpcmVjdF91cmk9aHR0cCUzQSUyRiUyRmxvY2FsaG9zdA==</request>
+    <status>200</status>
+    <responselength>1086</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJ0b2tlbl90eXBlIjogIkJlYXJlciIsICJzY29wZSI6ICJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldC91c2VyX2ltcGVyc29uYXRpb24iLCAiZXhwaXJlc19pbiI6IDM1OTksICJleHRfZXhwaXJlc19pbiI6IDM1OTksICJhY2Nlc3NfdG9rZW4iOiAiZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDNOMGN5NTNhVzVrYjNkekxtNWxkQzgyWXpFeVlqQmlNQzFpTW1OakxUUmhOek10T0RJMU1pMHdZamswWW1aallUSXhORFV2SWl3aVlYVmtJam9pYUhSMGNITTZMeTl0WVc1aFoyVnRaVzUwTG1OdmNtVXVkMmx1Wkc5M2N5NXVaWFF2SWl3aVlYQndhV1FpT2lJd05HSXdOemM1TlMwNFpHUmlMVFEyTVdFdFltSmxaUzB3TW1ZNVpURmlaamRpTkRZaUxDSmhlbkFpT2lJd05HSXdOemM1TlMwNFpHUmlMVFEyTVdFdFltSmxaUzB3TW1ZNVpURmlaamRpTkRZaUxDSjBhV1FpT2lJMll6RXlZakJpTUMxaU1tTmpMVFJoTnpNdE9ESTFNaTB3WWprMFltWmpZVEl4TkRVaUxDSnZhV1FpT2lKaFlXRmhZV0ZoWVMweE1URXhMVEl5TWpJdE16TXpNeTAwTkRRME5EUTBORFEwTkRRaUxDSnpkV0lpT2lKR0xVRjZRMnhwVTNWaWFtVmpkQ0lzSW5Wd2JpSTZJbUZzYVdObFFHTnZiblJ2YzI4dVkyOXRJaXdpYm1GdFpTSTZJa0ZzYVdObElFVjRZVzF3YkdVaUxDSndjbVZtWlhKeVpXUmZkWE5sY201aGJXVWlPaUpoYkdsalpVQmpiMjUwYjNOdkxtTnZiU0lzSW5WdWFYRjFaVjl1WVcxbElqb2lZV3hwWTJWQVkyOXVkRzl6Ynk1amIyMGlMQ0p6WTNBaU9pSjFjMlZ5WDJsdGNHVnljMjl1WVhScGIyNGlMQ0psZUhBaU9qRTNOemM1TWpNeU1qRjkuc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3MiLCAicmVmcmVzaF90b2tlbiI6ICIwLkFSQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCIiwgImZvY2kiOiAiMSJ9</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 11:10:00 UTC 2026</time>
+    <url>https://login.microsoftonline.com/6c12b0b0-b2cc-4a73-8252-0b94bfca2145/oauth2/v2.0/token</url>
+    <host ip="1.2.3.4">login.microsoftonline.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>POST</method>
+    <path>/6c12b0b0-b2cc-4a73-8252-0b94bfca2145/oauth2/v2.0/token</path>
+    <extension>null</extension>
+    <request base64="true">UE9TVCAvNmMxMmIwYjAtYjJjYy00YTczLTgyNTItMGI5NGJmY2EyMTQ1L29hdXRoMi92Mi4wL3Rva2VuIEhUVFAvMS4xDQpIb3N0OiBsb2dpbi5taWNyb3NvZnRvbmxpbmUuY29tDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZA0KQ29udGVudC1MZW5ndGg6IDQ0Mw0KDQpjbGllbnRfaWQ9NzQ2NTgxMzYtMTRlYy00NjMwLWFkOWItMjZlMTYwZmYwZmM2JnJlZGlyZWN0X3VyaT1icmstYzQ0YjQwODMtM2JiMC00OWMxLWI0N2QtOTc0ZTUzY2JkZjNjJTNBJTJGJTJGcG9ydGFsLmF6dXJlLmNvbSZzY29wZT1odHRwcyUzQSUyRiUyRm1hbmFnZW1lbnQuYXp1cmUuY29tJTJGLmRlZmF1bHQmZ3JhbnRfdHlwZT1yZWZyZXNoX3Rva2VuJnJlZnJlc2hfdG9rZW49MC5BUkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQiZicmtfY2xpZW50X2lkPWM0NGI0MDgzLTNiYjAtNDljMS1iNDdkLTk3NGU1M2NiZGYzYyZicmtfcmVkaXJlY3RfdXJpPWh0dHBzJTNBJTJGJTJGcG9ydGFsLmF6dXJlLmNvbSUyRg==</request>
+    <status>200</status>
+    <responselength>1062</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJ0b2tlbl90eXBlIjogIkJlYXJlciIsICJzY29wZSI6ICJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tL3VzZXJfaW1wZXJzb25hdGlvbiIsICJleHBpcmVzX2luIjogMzU5OSwgImV4dF9leHBpcmVzX2luIjogMzU5OSwgImFjY2Vzc190b2tlbiI6ICJleUpoYkdjaU9pSlNVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMM04wY3k1M2FXNWtiM2R6TG01bGRDODJZekV5WWpCaU1DMWlNbU5qTFRSaE56TXRPREkxTWkwd1lqazBZbVpqWVRJeE5EVXZJaXdpWVhWa0lqb2lhSFIwY0hNNkx5OXRZVzVoWjJWdFpXNTBMbUY2ZFhKbExtTnZiU0lzSW1Gd2NHbGtJam9pTnpRMk5UZ3hNell0TVRSbFl5MDBOak13TFdGa09XSXRNalpsTVRZd1ptWXdabU0ySWl3aVlYcHdJam9pTnpRMk5UZ3hNell0TVRSbFl5MDBOak13TFdGa09XSXRNalpsTVRZd1ptWXdabU0ySWl3aWRHbGtJam9pTm1NeE1tSXdZakF0WWpKall5MDBZVGN6TFRneU5USXRNR0k1TkdKbVkyRXlNVFExSWl3aWIybGtJam9pWVdGaFlXRmhZV0V0TVRFeE1TMHlNakl5TFRNek16TXRORFEwTkRRME5EUTBORFEwSWl3aWMzVmlJam9pUW5KdlEwa3RUbVZ6ZEdWa1UzVmlhbVZqZENJc0luVndiaUk2SW1Gc2FXTmxRR052Ym5SdmMyOHVZMjl0SWl3aWJtRnRaU0k2SWtGc2FXTmxJRVY0WVcxd2JHVWlMQ0p3Y21WbVpYSnlaV1JmZFhObGNtNWhiV1VpT2lKaGJHbGpaVUJqYjI1MGIzTnZMbU52YlNJc0luVnVhWEYxWlY5dVlXMWxJam9pWVd4cFkyVkFZMjl1ZEc5emJ5NWpiMjBpTENKelkzQWlPaUoxYzJWeVgybHRjR1Z5YzI5dVlYUnBiMjRpTENKbGVIQWlPakUzTnpjNU1qTXdNakY5LnNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3NzIiwgInJlZnJlc2hfdG9rZW4iOiAiMC5BUkNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQyJ9</response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Mon Apr 20 11:10:05 UTC 2026</time>
+    <url>https://management.azure.com/subscriptions?api-version=2022-12-01</url>
+    <host ip="1.2.3.4">management.azure.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method>GET</method>
+    <path>/subscriptions?api-version=2022-12-01</path>
+    <extension>null</extension>
+    <request base64="true">R0VUIC9zdWJzY3JpcHRpb25zP2FwaS12ZXJzaW9uPTIwMjItMTItMDEgSFRUUC8xLjENCkhvc3Q6IG1hbmFnZW1lbnQuYXp1cmUuY29tDQpBdXRob3JpemF0aW9uOiBCZWFyZXIgZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDNOMGN5NTNhVzVrYjNkekxtNWxkQzgyWXpFeVlqQmlNQzFpTW1OakxUUmhOek10T0RJMU1pMHdZamswWW1aallUSXhORFV2SWl3aVlYVmtJam9pYUhSMGNITTZMeTl0WVc1aFoyVnRaVzUwTG1GNmRYSmxMbU52YlNJc0ltRndjR2xrSWpvaU56UTJOVGd4TXpZdE1UUmxZeTAwTmpNd0xXRmtPV0l0TWpabE1UWXdabVl3Wm1NMklpd2lZWHB3SWpvaU56UTJOVGd4TXpZdE1UUmxZeTAwTmpNd0xXRmtPV0l0TWpabE1UWXdabVl3Wm1NMklpd2lkR2xrSWpvaU5tTXhNbUl3WWpBdFlqSmpZeTAwWVRjekxUZ3lOVEl0TUdJNU5HSm1ZMkV5TVRRMUlpd2liMmxrSWpvaVlXRmhZV0ZoWVdFdE1URXhNUzB5TWpJeUxUTXpNek10TkRRME5EUTBORFEwTkRRMElpd2ljM1ZpSWpvaVFuSnZRMGt0VG1WemRHVmtVM1ZpYW1WamRDSXNJblZ3YmlJNkltRnNhV05sUUdOdmJuUnZjMjh1WTI5dElpd2libUZ0WlNJNklrRnNhV05sSUVWNFlXMXdiR1VpTENKd2NtVm1aWEp5WldSZmRYTmxjbTVoYldVaU9pSmhiR2xqWlVCamIyNTBiM052TG1OdmJTSXNJblZ1YVhGMVpWOXVZVzFsSWpvaVlXeHBZMlZBWTI5dWRHOXpieTVqYjIwaUxDSnpZM0FpT2lKMWMyVnlYMmx0Y0dWeWMyOXVZWFJwYjI0aUxDSmxlSEFpT2pFM056YzVNak13TWpGOS5zc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzcw0KDQo=</request>
+    <status>200</status>
+    <responselength>63</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJ2YWx1ZSI6W119</response>
+    <comment></comment>
+  </item>
+</items>
