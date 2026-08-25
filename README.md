@@ -1,60 +1,6 @@
 # TATS — Token Analysis and Tracking System
 
-```
-                                                           ........ ..                                                                                  
-                                         .                -#+:.   .:=*##=.                                                                              
-                                        :@=.            .#..          . .-%..                                                                           
-                                        .@+-            *#+#%==---=*#+:. .:+                                                                            
-                                         %*#- ...     .#.. ..+      .#..=%:*                                                                            
-                                     ....*#.*@%%@@#=. #.    .*%%#=:..* .  .** ..                                                                        
-                                    .-##.+-* #.   .  .+%+:..@.. ... ..#-   ..#- ...                                                                     
-                       .=+.       =%:    ==%:.@..        .=%%#*=-:.   .=#.    .#+..#.                                                                   
-                         +=**=..-*.     .-#:=..*.            ++ . .---:. +*..   :* .#:                                                                  
-                          .#:.:%:        .%.*..+=             .=+.  ..::  %-#- ..%:. #                                                                  
-                            -%=           #.:* .*           .  ..#*##%@-  -=..#*+.*  *:                                                                 
-                            #.            *..+.=*          -*%*-:*#:#-     # .+=..+=.:*                                                                 
-                           +=.             .+@@.        .%.  -@-. *#=      += .*   # .+                                                                 
-                           #                           .*:-%-. .%=. *-     .#  +-%=*+.-+.                                                               
-                          :+                           :@=.. .#-    .#      +. .%.  *-:#.                                                               
-                          == ...:-+##=                 ..-#*#-..    .*      .%:-*   =-#.                                                                
-                    .++*#%#+-:..     .*-                .            +-.      -#=   *-.                                                                 
-                     .:=##-:::---==++++**                            +..-+#*-. *.  .@.                      .                                           
-                          -+:+%%+:.  .*:                            .*#%#+=-.=*#. .:*.           .=#%%#+-..:=%:                                         
-                          .*.      .-#                    ....       #      *: #   --%..      :%...           *:                                        
-                           #          ..               *@=. .#.     -+     *- .#...# .*      :%...:+%=.   .#:.:%.                                       
-                          .=+             .-+*.        +.=*:  =*.   #.    +- .#.+*%..:+      .%.#:.:#.   -#*%..*.                                       
-                            =-          .#..*.=+.     .:* ..=#=.#-.*-    :*. --  +=  #.       +%.  .%+++*#. .#:*.                                       
-                            .#+.        :* :+ .:#      .-**- ..-#=%=.    #. .@..:# .#:       .#:   #:  ..%.. .%=                                        
-                          .:%.:#        +=.%.  +=          ..:=*#=#@+.  :# :#+#=#. +:      :+#.  .+-.:+**%=.=##*+##.                                    
-                          += -%#*=      *-:=..+-.             ..%..=%%: .%+=   +-.-*.    ++.*-. .--......%+.     ..-+                                   
-                       .:@%=.  .. %:.. .#:#..*.             .=%.    .  ..=-   :# .#     :+  +   +=@.   *-        -%@%=                                  
-                                   .#+..#-* #.           .:#=.         .=+. .:###= .    #-. +..*-.%...-+ ..:+%*:..:*.#                                  
-                                      :#+*.%:  ....::-=*#%          ..:*-   -+.        .%.  *=-*..%.. =**#-.: =.-+%*:.%.                                
-                                       :#=#:::::...  .+..%.       :#=:+-. .=*          .% .#:.+- :+  . #.-:-*#=...-::::%.                               
-                                       :%#.           -* #:      -*. :%. .*#-          :+. %*#%..+.    :@+=.-.- . - -..-+                               
-                                       .%.            .:%#:.     =+.:*:#%=..#          :-.:%..-=.%.    .+= - ::.-=.-- -.*:                              
-                                                        .@:.     .#..*  :%. =:        ..# +. .:+-*      .@:.=..-=.-.-.- .# .                            
-                                                                  +. #   =-.:%         ..%*   *:#        +*. .=.  -.-::..+*.                            
-                                                                  .# == :-#. #:.        .#.  .%.          *:. .. -:..:.=. #-                            
-                                                                   #: +%-...+%-    .:+#=@:   ==.          +=....=.......-- #                            
-                                                                   .+. :#..  .-*.+#-   .*   .% .           #-::-.:.    ..:+=+.                          
-                                                                    +=  .+*..  .*- .=#=:*.. #:%.           -*..:..-     -.=.*.                          
-                                                                     .=+-..+*    .%-.. ..%%-..#.            *:.=.-:.    :--.:%                          
-                                                                         .   .%+. +=:*@=.   :%.             .+...-.:.    .==.=:                         
-                                                                               :*    .   .#*..               #+-.::=       =::%.                        
-                                                                                :*....:**.                  ..*.--::...=:=. -.+=.                       
-                                                                                  :==:                        +*  ...-. ::-..-.#                        
-                                                                                                              .%. .-.-:-.:.: .-+=.                      
-                                                                                                               :# -.=:==-: -  .-%.                      
-                                                                                                                -*:=.- .::..-+%*#.                      
-                                                                                                                .=*-..  -@%:..+=.@.                     
-                                                                                                                  =*%*... %:.=%+. #                     
-                                                                                                                   *:-.:-+%*..    *-.                   
-                                                                                                                   .%+:.         .#..                   
-                                                                                                                   .+=         .:%.                     
-                                                                                                                     =+.  .. :#%-                       
-                                                                                                                      .:+**#+. #:                       
-```
+
 
 Track OAuth 2.0, OIDC, and Microsoft Entra ID tokens across captured network
 traffic. Ingests Burp Suite XML exports, mitmproxy flow files, or live Chrome
@@ -63,9 +9,9 @@ interactive web dashboard for filtering tokens, walking exchanges, spotting
 risky scopes, exporting tokens for replay, and visualising token lifecycles
 as Mermaid graphs.
 
-> **Status:** stable for personal / engagement use. Optimised for the
+> **Status:** TATS is stable for personal / engagement use. Optimised for the
 > Microsoft 365 / Entra ecosystem (FOCI, BroCI/NAA, ESTSAUTH session
-> cookies, entrascopes.com enrichment) but works against any standards-ish
+> cookies, entrascopes.com enrichment) but works against any standard-ish
 > OAuth/OIDC traffic.
 
 ---
@@ -86,6 +32,10 @@ resolves Microsoft client / resource GUIDs against
 [entrascopes.com](https://entrascopes.com/), and renders the whole picture
 as a single dashboard — including a refresh-token chain view that follows
 FOCI cross-app exchanges and BroCI nested-app token issuance.
+
+This project is intended primarily for research and education purposes but 
+provides options such as command preview and token export features that can
+support some offensive tooling. 
 
 ---
 
