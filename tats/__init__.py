@@ -2365,7 +2365,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
           file=sys.stderr)
     if not args.no_serve_hint:
         print(f"hint: launch the web UI with\n"
-              f"    python {Path(sys.argv[0]).name} serve {db_path}",
+              f"    {Path(sys.argv[0]).name} serve {db_path}",
               file=sys.stderr)
     return 0
 
@@ -2565,7 +2565,7 @@ def cmd_mitm(args: argparse.Namespace) -> int:
           file=sys.stderr)
     if not args.no_serve_hint:
         print(f"hint: launch the web UI with\n"
-              f"    python {Path(sys.argv[0]).name} serve {db_path}",
+              f"     {Path(sys.argv[0]).name} serve {db_path}",
               file=sys.stderr)
     return 0
 
